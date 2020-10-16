@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "nicolive-screenshot",
+    "version": "0.1.0",
+    "description": "ニコニコ生放送の配信画面をスクショできる拡張機能",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://live.nicovideo.jp/watch/*",
+                "https://live2.nicovideo.jp/watch/*"
+            ],
+            "js": [
+                "js/html2camvas.js",
+                "js/main.js"
+            ],
+            "css": [
+                "css/main.css"
+            ]
+        }
+    ]
+}
